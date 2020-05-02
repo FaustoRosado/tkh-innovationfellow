@@ -1,0 +1,128 @@
+.banner {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: #00a0fc;
+  font-weight: 500;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  top: 0;
+  z-index: 10;
+}
+
+div {
+  display: block;
+}
+
+  .main {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-column-gap: 45px;
+    column-gap: 45px;
+  grid-template-areas: "sidebar main";
+  max-width: 1200px;
+  padding-right: 5px;
+}
+
+.main article {
+  grid-area: main;
+  grid-row-start: main;
+  grid-column-start: main;
+  grid-row-end: main;
+  grid-column-end: main;
+}
+
+.container {
+  margin: 0 40px;
+}
+
+article, footer, header {
+  display: block;
+}
+
+body {
+  border-top: 20px solid #00a0fc; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1, h2 { 
+  margin-bottom: 20px; text-transform: uppercase; 
+}
+p { 
+  line-height: 1.8; margin: 0 0 30px; 
+}
+a { 
+  color: #00a0fc; 
+}
+
+#cf {
+  position:relative;
+  margin:0 auto;
+}
+#cf img {
+  position:relative;
+  left:0;
+}
+
+@keyframes cfFadeInOut {
+  0% {
+  opacity:1;
+}
+25% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf img.top {
+animation-name: cfFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 3s;
+animation-direction: alternate;
+}
+
+.title {
+  font-size: 95px;
+  font-weight: 900;
+  margin: 15px 0;
+  text-align: left;
+  padding-top: 40;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 25px 0 0;
+  text-align: left;
+}
+.header {
+  border-bottom: 6px solid #00a0fc;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+p {
+  line-height: 1.8;
+  margin: 0 0 30px;
+}
+
+
+ul {
+  line-height: 1.8;
+  margin: 0 0 20px;
+}
+.center {
+margin: 0 auto;
+text-align: center;
+border-top: 20px solid #00a0fc;
+
+}
